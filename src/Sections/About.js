@@ -54,7 +54,7 @@ export default function About() {
         "Initiated over 10 data-related projects as sole aggregator of User Data for over 350 million monthly visitors.",
       date: "May '22 - Aug '22",
       image: ucb,
-      technologies: "Technologies: Jira, Confluence etc.",
+      technologies: "Technologies: Jira, Confluence, Figma",
     },
     {
       name: "Aspire Financial Technologies Holding Inc.",
@@ -63,7 +63,7 @@ export default function About() {
         "Maintained various REST APIs for core banking services handling over 2 billion dollars annually. ",
       date: "Feb '22 - Apr '22",
       image: ucb,
-      technologies: "Technologies: Laravel, PostgreSQL, Git, Postman etc.",
+      technologies: "Technologies: Laravel, PostgreSQL, Git, Postman",
     },
     // {
     //   name: "Home Team Science and Technology Agency",

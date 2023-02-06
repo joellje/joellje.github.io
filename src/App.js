@@ -1,10 +1,10 @@
 import "./App.css";
-import About from "./src/Sections/About";
-import Projects from "./src/Sections/Projects";
-import ContactMe from "./src/Sections/ContactMe";
-import Header from "./src/Components/Header";
-import Footer from "./src/Components/Footer";
-import Hero from "./src/Sections/Hero";
+import About from "./Sections/About";
+import Projects from "./Sections/Projects";
+import ContactMe from "./Sections/ContactMe";
+import Header from "./Components/Header";
+import Footer from "./Components/Footer";
+import Hero from "./Sections/Hero";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
