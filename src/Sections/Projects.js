@@ -1,6 +1,6 @@
 import React from "react";
 import ProjectCard from "../Components/ProjectCard";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 import bulletin from "../Assets/bulletin.png"
 import yummytummy from "../Assets/yummytummy.png"
 import ucb from "../Assets/ucb.png";
@@ -28,7 +28,7 @@ export default function Projects() {
   ];
 
   return (
-    <Fade left cascade>
+    <Fade>
       <div className="text-white pt-16 pb-16" id="projects">
         <h1 className="title">Projects</h1>
         <div className="pt-5 flex flex-col gap-2">

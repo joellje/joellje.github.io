@@ -1,5 +1,4 @@
 import React from "react";
-import { Formik, Field, Form } from "formik";
 import profile from "../Assets/profile.png";
 
 export default function ContactMe() {

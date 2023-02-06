@@ -21,10 +21,9 @@ import {
 } from "react-icons/di";
 import { SiTailwindcss, SiFigma, SiPostman } from "react-icons/si";
 import { FaAws } from "react-icons/fa";
-import Fade from "react-reveal/Fade";
+import { Fade } from "react-awesome-reveal";
 
 export default function About() {
-
   const educations = [
     {
       name: "University of California, Berkeley",
@@ -71,7 +70,7 @@ export default function About() {
   ];
   return (
     <div className="pt-16 text-white" id="about">
-      <Fade left cascade>
+      <Fade>
         <div>
           <h1 className="title">About Me</h1>
           <p className="pt-5 text-xl">
@@ -87,46 +86,48 @@ export default function About() {
             watching anime.
           </p>
         </div>
-        {/* TODO: allow icons to wrap and add hover animation */}
-        <div>
-          <h1 className="title">Tech Stack</h1>
-          <div className="flex flex-col gap-5">
-            <div>
-              <p className="pt-5 text-2xl">Languages</p>
-              <div className="pt-2 flex flex-row items-center">
-                <DiJava size={64} />
-                <DiHtml5 size={64} />
-                <DiCss3 size={64} />
-                <DiJsBadge size={64} />
-                <DiPython size={64} />
-                <DiPostgresql size={64} />
-              </div>
-            </div>
-            <div>
-              <p className="pt-5 text-2xl">Frameworks / Libraries</p>
-              <div className="pt-2 flex flex-row items-center">
-                <DiReact size={64} />
-                <SiTailwindcss size={64} />
-              </div>
-            </div>
-            <div>
-              <p className="pt-5 text-2xl">Tools</p>
-              <div className="pt-2 flex flex-row items-center">
-                <DiGithubFull size={64} />
-                <DiFirebase size={64} />
-                <DiMongodb size={64} />
-                <SiFigma size={64} />
-                <SiPostman size={64} />
-                <FaAws size={64} className="ml-3" />
-              </div>
+      </Fade>
+
+      <Fade>
+        <h1 className="title">Tech Stack</h1>
+      </Fade>
+      <Fade>
+        <div className="flex flex-col gap-5">
+          <div>
+            <p className="pt-5 text-2xl">Languages</p>
+            <div className="pt-2 flex flex-row items-center">
+              <DiJava size={64} />
+              <DiHtml5 size={64} />
+              <DiCss3 size={64} />
+              <DiJsBadge size={64} />
+              <DiPython size={64} />
+              <DiPostgresql size={64} />
             </div>
           </div>
-
-          {/* TODO: change to icons, maybe add proficiencies */}
+          <div>
+            <p className="pt-5 text-2xl">Frameworks / Libraries</p>
+            <div className="pt-2 flex flex-row items-center">
+              <DiReact size={64} />
+              <SiTailwindcss size={64} />
+            </div>
+          </div>
+          <div>
+            <p className="pt-5 text-2xl">Tools</p>
+            <div className="pt-2 flex flex-row items-center">
+              <DiGithubFull size={64} />
+              <DiFirebase size={64} />
+              <DiMongodb size={64} />
+              <SiFigma size={64} />
+              <SiPostman size={64} />
+              <FaAws size={64} className="ml-3" />
+            </div>
+          </div>
         </div>
+      </Fade>
 
-        <div>
-          <h1 className="title">Experience</h1>
+      <Fade>
+        <h1 className="title">Experience</h1>
+        <Fade>
           <div className="pt-5 flex flex-col gap-2">
             {experiences.map((experience) => (
               <ExperienceCard
@@ -139,25 +140,23 @@ export default function About() {
               />
             ))}
           </div>
-        </div>
-
-        <div>
-          <h1 className="title">Education</h1>
-          <div className="pt-5 flex flex-col gap-2">
-            {educations.map((education) => (
-              <EducationCard
-                name={education.name}
-                image={education.image}
-                date={education.date}
-                programme={education.programme}
-                description={education.description}
-              />
-            ))}
-          </div>
-        </div>
+        </Fade>
       </Fade>
 
-      {/* TODO: align dimensions of images */}
+      <Fade>
+        <h1 className="title">Education</h1>
+        <div className="pt-5 flex flex-col gap-2">
+          {educations.map((education) => (
+            <EducationCard
+              name={education.name}
+              image={education.image}
+              date={education.date}
+              programme={education.programme}
+              description={education.description}
+            />
+          ))}
+        </div>
+      </Fade>
     </div>
   );
 }
