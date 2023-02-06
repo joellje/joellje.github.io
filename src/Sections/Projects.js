@@ -3,7 +3,6 @@ import ProjectCard from "../Components/ProjectCard";
 import { Fade } from "react-awesome-reveal";
 import bulletin from "../Assets/bulletin.png"
 import yummytummy from "../Assets/yummytummy.png"
-import ucb from "../Assets/ucb.png";
 
 export default function Projects() {
   const projects = [

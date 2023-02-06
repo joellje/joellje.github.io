@@ -1,11 +1,9 @@
 import React from "react";
 import EducationCard from "../Components/EducationCard";
-import ri from "../Assets/ri.jpg";
 import ntu from "../Assets/ntu.png";
 import ucb from "../Assets/ucb.png";
 import shopee from "../Assets/shopee.png";
 import aspire from "../Assets/aspire.png";
-import htx from "../Assets/htx.png";
 import ExperienceCard from "../Components/ExperienceCard";
 import {
   DiJava,
