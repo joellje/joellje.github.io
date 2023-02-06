@@ -12,15 +12,18 @@ export default function Projects() {
       description: "web app to discover new eateries in Singapore",
       date: "2021",
       url: "https://github.com/joellje/YummyTummy",
-      image: ucb
+      image: yummytummy,
+      technologies: "React.js, Firebase, Google Maps API"
     },
     {
       name: "Bulletin by Goldman Sachs",
       description:
-        "web app that streamlines report generation process using a highly customizable, scalable, intuitive and automated report rendering solution",
+        "web app that streamlines excel report generation process",
       date: "2022",
       url: "https://github.com/joellje/Goldman-Sachs-Customizable-Reports-Renderer",
-      image: ucb
+      image: bulletin,
+      technologies: "React.js, Spring Boot, FastAPI, AWS"
+
     },
   ];
 
@@ -28,7 +31,7 @@ export default function Projects() {
     <Fade left cascade>
       <div className="text-white pt-16 pb-16" id="projects">
         <h1 className="title">Projects</h1>
-        <div className="pt-10 flex flex-col gap-1">
+        <div className="pt-5 flex flex-col gap-2">
           {projects.map((project) => (
             <ProjectCard
               name={project.name}
@@ -36,6 +39,7 @@ export default function Projects() {
               date={project.date}
               image={project.image}
               url={project.url}
+              technologies={project.technologies}
             />
           ))}
         </div>

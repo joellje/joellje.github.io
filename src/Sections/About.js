@@ -3,8 +3,8 @@ import EducationCard from "../Components/EducationCard";
 import ri from "../Assets/ri.jpg";
 import ntu from "../Assets/ntu.png";
 import ucb from "../Assets/ucb.png";
-import shopee from "../Assets/shopee.jpg";
-import aspire from "../Assets/aspire.jpg";
+import shopee from "../Assets/shopee.png";
+import aspire from "../Assets/aspire.png";
 import htx from "../Assets/htx.png";
 import ExperienceCard from "../Components/ExperienceCard";
 import {
@@ -24,6 +24,7 @@ import { FaAws } from "react-icons/fa";
 import Fade from "react-reveal/Fade";
 
 export default function About() {
+
   const educations = [
     {
       name: "University of California, Berkeley",
@@ -36,13 +37,7 @@ export default function About() {
       name: "Nanyang Technological University",
       programme: "Renaissance Engineering Programme",
       date: "Aug '20 - Present",
-      image: ucb,
-    },
-    {
-      name: "Raffles Institution",
-      programme: "Integrated Programme",
-      date: "Jan 16 - May '17",
-      image: ucb,
+      image: ntu,
     },
   ];
 
@@ -53,7 +48,7 @@ export default function About() {
       description:
         "Initiated over 10 data-related projects as sole aggregator of User Data for over 350 million monthly visitors.",
       date: "May '22 - Aug '22",
-      image: ucb,
+      image: shopee,
       technologies: "Technologies: Jira, Confluence, Figma",
     },
     {
@@ -62,7 +57,7 @@ export default function About() {
       description:
         "Maintained various REST APIs for core banking services handling over 2 billion dollars annually. ",
       date: "Feb '22 - Apr '22",
-      image: ucb,
+      image: aspire,
       technologies: "Technologies: Laravel, PostgreSQL, Git, Postman",
     },
     // {
@@ -132,7 +127,7 @@ export default function About() {
 
         <div>
           <h1 className="title">Experience</h1>
-          <div className="pt-10 flex flex-col gap-1">
+          <div className="pt-5 flex flex-col gap-2">
             {experiences.map((experience) => (
               <ExperienceCard
                 name={experience.name}
@@ -148,7 +143,7 @@ export default function About() {
 
         <div>
           <h1 className="title">Education</h1>
-          <div className="pt-10 flex flex-col gap-1">
+          <div className="pt-5 flex flex-col gap-2">
             {educations.map((education) => (
               <EducationCard
                 name={education.name}
