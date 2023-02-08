@@ -2,21 +2,13 @@ import React from "react";
 import TypeIt from "typeit-react";
 
 export default function Hero() {
-  // TODO: Add particles??
   return (
     <div
       className="h-screen flex flex-col justify-center items-center pb-20 text-white"
       id="hero"
     >
-      {/* <TypeIt>
-        <SuperStrong>Hi, I'm Joel!</SuperStrong>
-
-        
-      </TypeIt>
-      <TypeIt>Software Developer. Product Manager.</TypeIt> */}
-
       <TypeIt
-        className="text-6xl font-bold text-gray"
+        className="text-5xl sm:text-6xl font-bold text-gray"
         getBeforeInit={(instance) => {
           instance
             .type("Hello, I'm Jole")

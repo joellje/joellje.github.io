@@ -12,9 +12,6 @@ import { loadFull } from "tsparticles";
 function App() {
   const particlesInit = useCallback(async (engine) => {
     console.log(engine);
-    // you can initiate the tsParticles instance (engine) here, adding custom shapes or presets
-    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
-    // starting from v2 you can add only the features you need reducing the bundle size
     await loadFull(engine);
   }, []);
 
@@ -35,7 +32,7 @@ function App() {
                 value: "#18191a",
               },
             },
-            fpsLimit: 120,
+            fpsLimit: 100,
             interactivity: {
               events: {
                 onClick: {
@@ -87,7 +84,7 @@ function App() {
                   enable: true,
                   area: 800,
                 },
-                value: 80,
+                value: 70,
               },
               opacity: {
                 value: 0.5,
@@ -107,7 +104,7 @@ function App() {
 
       <div className="font-sans absolute w-screen text-white items-center flex flex-col">
         <Header />
-        <div className="h-screen flex-col w-8/12 padding-auto text-white">
+        <div className="h-screen flex-col w-9/12 sm:w-8/12 padding-auto text-white">
           <Hero />
           <About />
           <Projects />

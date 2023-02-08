@@ -5,21 +5,27 @@ import ucb from "../Assets/ucb.png";
 import shopee from "../Assets/shopee.png";
 import aspire from "../Assets/aspire.png";
 import ExperienceCard from "../Components/ExperienceCard";
-import {
-  DiJava,
-  DiJsBadge,
-  DiPostgresql,
-  DiHtml5,
-  DiCss3,
-  DiPython,
-  DiReact,
-  DiGithubFull,
-  DiFirebase,
-  DiMongodb,
-} from "react-icons/di";
-import { SiTailwindcss, SiFigma, SiPostman } from "react-icons/si";
-import { FaAws } from "react-icons/fa";
+import { SiPostman } from "react-icons/si";
 import { Fade } from "react-awesome-reveal";
+import {
+  JavaOriginalIcon,
+  ReactOriginalIcon,
+  Css3OriginalIcon,
+  JavascriptOriginalIcon,
+  MongodbOriginalIcon,
+  PostgresqlOriginalIcon,
+  Html5OriginalIcon,
+  PythonOriginalIcon,
+  GithubOriginalIcon,
+  FirebasePlainIcon,
+  NodejsOriginalIcon,
+  TailwindcssPlainIcon,
+  FigmaOriginalIcon,
+  AmazonwebservicesOriginalIcon,
+  AmazonwebservicesPlainWordmarkIcon,
+  ExpressOriginalIcon,
+  ExpressOriginalWordmarkIcon,
+} from "react-devicons";
 
 export default function About() {
   const educations = [
@@ -71,7 +77,7 @@ export default function About() {
       <Fade>
         <div>
           <h1 className="title">About Me</h1>
-          <p className="pt-5 text-xl">
+          <p className="pt-5 text-sm sm:text-xl">
             As a Year 3 undergraduate in Nanyang Technological University's
             Renaissance Engineering Programme, I am pursuing a Masters in
             Technology Management and a Bachelors in Engineering Science
@@ -79,48 +85,78 @@ export default function About() {
             exchange student for the year, and I'm looking for software
             engineering internships!
           </p>
-          <p className="pt-5 text-xl">
+          <p className="pt-5 text-sm sm:text-xl">
             In my free time, I like to play football and boulder. I also love
             watching anime.
           </p>
         </div>
       </Fade>
-
+      {/* TODO: add names of icons on hover */}
       <Fade>
         <h1 className="title">Tech Stack</h1>
       </Fade>
       <Fade>
-        <div className="flex flex-col gap-5">
+        <div className="grid grid-row-3 sm:grid-cols-3">
           <div>
-            <p className="pt-5 text-2xl">Languages</p>
-            <div className="pt-2 flex flex-row items-center">
-              <DiJava size={64} />
-              <DiHtml5 size={64} />
-              <DiCss3 size={64} />
-              <DiJsBadge size={64} />
-              <DiPython size={64} />
-              <DiPostgresql size={64} />
+            <p className="pt-5 text-xl sm:text-2xl">Languages</p>
+            <div className="pt-2 grid grid-cols-3 gap-y-3">
+              <JavaOriginalIcon size={64}/>
+              <Html5OriginalIcon size={64} />
+              <Css3OriginalIcon size={64} />
+              <JavascriptOriginalIcon size={64} />
+              <PythonOriginalIcon size={64} />
             </div>
           </div>
           <div>
-            <p className="pt-5 text-2xl">Frameworks / Libraries</p>
-            <div className="pt-2 flex flex-row items-center">
-              <DiReact size={64} />
-              <SiTailwindcss size={64} />
+            <p className="pt-5 text-xl sm:text-2xl">Frameworks / Libraries</p>
+            <div className="pt-2 grid grid-cols-3 gap-y-3">
+              <ExpressOriginalWordmarkIcon
+                size={64}
+                className=" bg-white rounded-full"
+              />
+              <ReactOriginalIcon size={64} />
+              <NodejsOriginalIcon size={64} />
+              <TailwindcssPlainIcon size={64} />
             </div>
           </div>
           <div>
-            <p className="pt-5 text-2xl">Tools</p>
-            <div className="pt-2 flex flex-row items-center">
-              <DiGithubFull size={64} />
-              <DiFirebase size={64} />
-              <DiMongodb size={64} />
-              <SiFigma size={64} />
+            <p className="pt-5 text-xl sm:text-2xl">Tools</p>
+            <div className="pt-2 grid grid-cols-3 gap-y-3">
+              <GithubOriginalIcon size={64} color="#c9510c" />
+              <MongodbOriginalIcon size={64} />
+              <FirebasePlainIcon size={64} />
+              <FigmaOriginalIcon size={64} />
               <SiPostman size={64} />
-              <FaAws size={64} className="ml-3" />
+              <AmazonwebservicesPlainWordmarkIcon size={64} />
+              <PostgresqlOriginalIcon size={64} />
             </div>
           </div>
         </div>
+        {/* <div className="flex flex-col gap-5">
+          <div>
+            <p className="pt-5 text-xl sm:text-2xl">Languages</p>
+            <div className="pt-2 flex flex-row flex-wrap items-center gap-y-2">
+              <JavaOriginalIcon size={64} />
+              <Html5OriginalIcon size={64} className="ml-2" />
+              <Css3OriginalIcon size={64} className="ml-2" />
+              <JavascriptOriginalIcon size={64} className="sm:ml-2" />
+              <PythonOriginalIcon size={64} className="ml-2" />
+            </div>
+          </div>
+          
+          <div>
+            <p className="pt-5 text-xl sm:text-2xl">Tools</p>
+            <div className="pt-2 flex flex-row flex-wrap gap-y-2 items-center">
+              <GithubOriginalIcon size={64} color="#c9510c" />
+              <MongodbOriginalIcon size={64} className="ml-2" />
+              <FirebasePlainIcon size={64} className="ml-2" />
+              <FigmaOriginalIcon size={64} className="sm:ml-2" />
+              <SiPostman size={64} className="ml-2" />
+              <AmazonwebservicesPlainWordmarkIcon size={64} className="ml-3" />
+              <PostgresqlOriginalIcon size={64} className="sm:ml-2" />
+            </div>
+          </div>
+        </div> */}
       </Fade>
 
       <Fade>
@@ -140,7 +176,7 @@ export default function About() {
           </div>
         </Fade>
       </Fade>
-
+      {/* TODO: Add responsiveness, improve cards, add favicon */}
       <Fade>
         <h1 className="title">Education</h1>
         <div className="pt-5 flex flex-col gap-2">

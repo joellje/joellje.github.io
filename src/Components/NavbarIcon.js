@@ -10,7 +10,7 @@ export default function NavbarIcon(props) {
   return (
     <>
       <div
-        className="mx-2 w-1/3 bg-blackk items-center text-center hover:scale-110 transition-all duration-200 ease-linear cursor-pointer z-0"
+        className="mx-2 w-1/3 items-center text-center hover:scale-110 transition-all duration-200 ease-linear cursor-pointer z-0 hover:text-orange-600"
         onClick={() =>
           document
             .getElementById(titleToIdMappings[title])
