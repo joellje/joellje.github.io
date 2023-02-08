@@ -4,7 +4,7 @@ import profile from "../Assets/profile.png";
 export default function ContactMe() {
   return (
     <>
-      <div className="flex flex-col sm:flex-row sm:h-screen items-center justify-center pb-10">
+      <div className="flex flex-col sm:flex-row sm:h-screen items-center justify-center pb-10 sm:gap-24">
         <div>
           <img
             src={profile}

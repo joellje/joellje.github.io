@@ -23,11 +23,11 @@ export default function ProjectCard(props) {
 
         <a href={url} target="_blank">
           <div className="flex bg-blackk text-white w-full sm:hidden flex-col justify-equal rounded-lg px-4 py-4 border-2 items-center hover:opacity-80 hover:shadow-lg">
-            <div className="flex justify-center items-center object-contain w-32 mr-4">
+            <div className="flex h-32 w-32 justify-center items-center sm:w-32 mr-4">
               <img src={props.image} alt="logo" />
             </div>
 
-            <div className="flex flex-col gap-1 pt-4">
+            <div className="flex w-11/12 flex-col gap-1 pt-4">
               <h1 className="font-bold text-lg">{props.name}</h1>
               <p>{props.date}</p>
               <p>{props.description}</p>

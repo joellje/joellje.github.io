@@ -23,7 +23,7 @@ export default function EducationCard(props) {
             <img src={props.image} alt="logo" className="" />
           </div>
 
-          <div className="flex flex-col gap-1 pt-4">
+          <div className="flex w-11/12 flex-col gap-1 pt-4">
             <h1 className="font-bold text-lg">{props.name}</h1>
             <p>{props.programme}</p>
             <p>{props.date}</p>
