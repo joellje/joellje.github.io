@@ -1,15 +1,15 @@
 import React from "react";
-import profile from "../Assets/profile.png";
+import profile from "../Assets/profile2.JPG";
 
 export default function ContactMe() {
   return (
     <>
-      <div className="flex flex-col sm:flex-row sm:h-screen items-center justify-center pb-10 sm:gap-24">
+      <div className="flex flex-col sm:flex-row sm:h-screen items-center justify-center sm:gap-24">
         <div>
           <img
             src={profile}
             alt="profile"
-            className="w-64 sm:w-96 border-4 rounded-full bg-white"
+            className="hidden sm:block sm:w-64 border-4 rounded-full bg-white"
           />
         </div>
 
@@ -17,10 +17,10 @@ export default function ContactMe() {
           className="flex flex-col justify-center gap-4 text-white sm:w-1/2 sm:gap-10"
           id="contactme"
         >
-          <h1 className="title">Contact Me</h1>
-          <p className="text-lg: sm:text-xl">
+          <h1 className="text-4xl sm:text-5xl font-bold">Contact Me</h1>
+          <p className="text-lg: sm:text-xl font-['Fira_Sans']">
             Please feel free to reach out to me regarding opportunities or
-            conversations in the Tech Sector.
+            conversations in the software industry.
             <br />
             <br />
             I'd also love to chat about anything that interests you!

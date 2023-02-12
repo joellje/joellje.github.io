@@ -3,7 +3,7 @@ import NavbarIcon from "./NavbarIcon";
 
 export default function Navbar() {
   return (
-    <div className="hidden sm:gap-3 w-1/4 h-16 sm:flex flex-row items-center justify-around">
+    <div className="hidden sm:gap-3 h-16 sm:flex flex-row items-center justify-around">
       <NavbarIcon text="About Me" />
       <NavbarIcon text="Projects" />
       <NavbarIcon text="Contact Me" />

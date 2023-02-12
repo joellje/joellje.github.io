@@ -4,8 +4,8 @@ import { Fade } from "react-awesome-reveal";
 export default function ExperienceCard(props) {
   return (
     <>
-      <Fade>
-        <div className="hidden bg-blackk text-white w-full sm:flex flex-row justify-equal rounded-lg px-4 py-4 border-2 items-center hover:opacity-80 hover:shadow-lg">
+      <Fade triggerOnce={true} cascade>
+        <div className="hidden font-['Fira_Sans'] bg-blackk text-white w-full sm:flex flex-row justify-equal rounded-lg px-4 py-4 border-2 items-center">
           <div className="flex justify-center items-center object-contain w-32 mr-4">
             <img src={props.image} alt="logo" className="" />
           </div>
@@ -19,7 +19,7 @@ export default function ExperienceCard(props) {
           </div>
         </div>
 
-        <div className="flex sm:hidden bg-blackk text-white w-full flex-col justify-equal rounded-lg px-4 py-4 border-2 items-center hover:opacity-80 hover:shadow-lg">
+        <div className="flex sm:hidden bg-blackk text-white w-full flex-col justify-equal rounded-lg px-4 py-4 border-2 items-center">
           <div className="flex justify-center items-center object-contain w-32 mr-4">
             <img src={props.image} alt="logo" className="" />
           </div>

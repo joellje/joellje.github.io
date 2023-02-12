@@ -74,10 +74,10 @@ export default function About() {
   ];
   return (
     <div className="pt-16 text-white" id="about">
-      <Fade>
+      <Fade triggerOnce={true}>
         <div>
           <h1 className="title">About Me</h1>
-          <p className="pt-5 text-sm sm:text-xl">
+          <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
             As a Year 3 undergraduate in Nanyang Technological University's
             Renaissance Engineering Programme, I am pursuing a Masters in
             Technology Management and a Bachelors in Engineering Science
@@ -85,50 +85,50 @@ export default function About() {
             exchange student for the year, and I'm looking for software
             engineering internships!
           </p>
-          <p className="pt-5 text-sm sm:text-xl">
+          <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
             In my free time, I like to play football and boulder. I also love
             watching anime.
           </p>
         </div>
       </Fade>
       {/* TODO: add names of icons on hover */}
-      <Fade>
-        <h1 className="title">Tech Stack</h1>
+      <Fade triggerOnce={true}>
+        <h1 className="subtitle">Tech Stack</h1>
       </Fade>
-      <Fade>
-        <div className="grid grid-row-3 sm:grid-cols-3">
+      <Fade triggerOnce={true}>
+        <div className="flex flex-col w-44">
           <div>
             <p className="pt-5 text-xl sm:text-2xl">Languages</p>
             <div className="pt-2 grid grid-cols-3 gap-y-3">
-              <JavaOriginalIcon size={64}/>
-              <Html5OriginalIcon size={64} />
-              <Css3OriginalIcon size={64} />
-              <JavascriptOriginalIcon size={64} />
-              <PythonOriginalIcon size={64} />
+              <JavaOriginalIcon size={42} />
+              <Html5OriginalIcon size={42} />
+              <Css3OriginalIcon size={42} />
+              <JavascriptOriginalIcon size={42} />
+              <PythonOriginalIcon size={42} />
             </div>
           </div>
           <div>
             <p className="pt-5 text-xl sm:text-2xl">Frameworks / Libraries</p>
             <div className="pt-2 grid grid-cols-3 gap-y-3">
               <ExpressOriginalWordmarkIcon
-                size={64}
+                size={42}
                 className=" bg-white rounded-full"
               />
-              <ReactOriginalIcon size={64} />
-              <NodejsOriginalIcon size={64} />
-              <TailwindcssPlainIcon size={64} />
+              <ReactOriginalIcon size={42} />
+              <NodejsOriginalIcon size={42} />
+              <TailwindcssPlainIcon size={42} />
             </div>
           </div>
           <div>
             <p className="pt-5 text-xl sm:text-2xl">Tools</p>
             <div className="pt-2 grid grid-cols-3 gap-y-3">
-              <GithubOriginalIcon size={64} color="#c9510c" />
-              <MongodbOriginalIcon size={64} />
-              <FirebasePlainIcon size={64} />
-              <FigmaOriginalIcon size={64} />
-              <SiPostman size={64} />
-              <AmazonwebservicesPlainWordmarkIcon size={64} />
-              <PostgresqlOriginalIcon size={64} />
+              <GithubOriginalIcon size={42} color="#c9510c" />
+              <MongodbOriginalIcon size={42} />
+              <FirebasePlainIcon size={42} />
+              <FigmaOriginalIcon size={42} />
+              <SiPostman size={42} />
+              <AmazonwebservicesPlainWordmarkIcon size={42} />
+              <PostgresqlOriginalIcon size={42} />
             </div>
           </div>
         </div>
@@ -159,9 +159,13 @@ export default function About() {
         </div> */}
       </Fade>
 
-      <Fade>
-        <h1 className="title">Experience</h1>
-        <Fade>
+      <Fade triggerOnce={true}>
+        <h1 className="subtitle">Relevant Coursework</h1>
+      </Fade>
+
+      <Fade triggerOnce={true}>
+        <h1 className="subtitle">Experience</h1>
+        <Fade triggerOnce={true}>
           <div className="pt-5 flex flex-col gap-2">
             {experiences.map((experience) => (
               <ExperienceCard
@@ -177,8 +181,8 @@ export default function About() {
         </Fade>
       </Fade>
       {/* TODO: Add responsiveness, improve cards, add favicon */}
-      <Fade>
-        <h1 className="title">Education</h1>
+      <Fade triggerOnce={true}>
+        <h1 className="subtitle">Education</h1>
         <div className="pt-5 flex flex-col gap-2">
           {educations.map((education) => (
             <EducationCard

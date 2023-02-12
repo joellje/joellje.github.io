@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -15,11 +18,16 @@
 
 @layer components {
   .title {
-    @apply text-4xl sm:text-5xl;
+    @apply text-4xl sm:text-5xl font-bold;
     @apply pt-10;
   }
 
-  .skillicon{
+  .subtitle {
+    @apply text-3xl sm:text-4xl;
+    @apply pt-5;
+  }
+
+  .skillicon {
     @apply text-xl;
   }
 }
