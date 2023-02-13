@@ -10,7 +10,14 @@ module.exports = {
       mono: ["Monaco", "ui-monospace"],
     },
     extend: {
-      colors: { grayy: "#333333", whitee: "#A1A1A1", blackk: "#18191a" },
+      colors: {
+        grayy: "#333333",
+        whitee: "#A1A1A1",
+        blackk: "#18191a",
+        a: "#fc0345",
+        b: "#fc03b1",
+        c: "#4a03fc",
+      },
     },
   },
   plugins: [],

@@ -5,12 +5,11 @@ import ContactMe from "./Sections/ContactMe";
 import Header from "./Components/Header";
 import Footer from "./Components/Footer";
 import Hero from "./Sections/Hero";
+import SideBar from "./Components/SideBar";
 import { useCallback } from "react";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
-import { BsFillArrowUpCircleFill } from "react-icons/bs";
-import { FaLinkedin, FaGithubSquare, FaFileAlt } from "react-icons/fa";
-import { Tooltip } from "react-tooltip";
+
 import "react-tooltip/dist/react-tooltip.css";
 
 function App() {
@@ -109,53 +108,7 @@ function App() {
       <div className="font-sans absolute w-screen text-white items-center flex flex-col">
         <Header />
         <div className="h-screen flex-col w-9/12 sm:w-8/12 padding-auto text-white">
-          <div className="hidden sm:flex flex-col fixed right-5 bottom-5 sm:text-3xl z-49 justify-around items-center gap-3">
-            <a
-              href="https://drive.google.com/file/d/13TVsQWqiWX6UGBsCckxgtVwbHFvmuAkC/view?usp=sharing"
-              target="_blank"
-              id="resume"
-              data-tooltip-content="My Resume"
-              data-tooltip-place="left"
-            >
-              <FaFileAlt className="hover:scale-125 transition-all duration-200 ease-linear cursor-pointer hover:text-orange-600" />
-            </a>
-            <a
-              href="https://github.com/joellje"
-              target="_blank"
-              id="github"
-              data-tooltip-content="Github"
-              data-tooltip-place="left"
-            >
-              <FaGithubSquare className="hover:scale-125 transition-all duration-200 ease-linear cursor-pointer hover:text-orange-600" />
-            </a>
-            <a
-              href="https://www.linkedin.com/in/joel-lim-jie-en/"
-              target="_blank"
-              id="linkedin"
-              data-tooltip-content="LinkedIn"
-              data-tooltip-place="left"
-            >
-              <FaLinkedin className="hover:scale-125 transition-all duration-200 ease-linear cursor-pointer hover:text-orange-600" />
-            </a>
-            <div>
-              <BsFillArrowUpCircleFill
-                id="scroll"
-                data-tooltip-content="Scroll to Top"
-                data-tooltip-place="left"
-                className="sm:text-3xl  hover:scale-125 transition-all duration-200 ease-linear cursor-pointer sm:hover:text-orange-600"
-                onClick={() =>
-                  document
-                    .getElementById("hero")
-                    .scrollIntoView({ behavior: "smooth" })
-                }
-              />
-              <Tooltip anchorId="resume" style={{ fontSize: "18px" }} />
-              <Tooltip anchorId="github" style={{ fontSize: "18px" }} />
-              <Tooltip anchorId="linkedin" style={{ fontSize: "18px" }} />
-              <Tooltip anchorId="scroll" style={{ fontSize: "18px" }} />
-            </div>
-          </div>
-
+          <SideBar />
           <Hero />
           <div className="bg-blackk px-10">
             <About />
