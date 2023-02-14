@@ -26,7 +26,7 @@ export default function Header() {
   // ];
   return (
     <>
-      <div className="flex flex-row space-between fixed z-50 top-0 w-screen h-16 sm:justify-around items-center bg-blackk ">
+      <div className="flex flex-row space-between fixed z-50 top-0 min-w-full h-16 sm:justify-around items-center bg-blackk ">
         <img
           src={logo}
           alt="logo"
@@ -39,7 +39,7 @@ export default function Header() {
         />
 
         <Navbar />
-        <FiMenu className="fixed right-5 sm:hidden" onClick={onClickHandler} />
+        <FiMenu className="fixed right-5 z-50 sm:hidden" onClick={onClickHandler} />
       </div>
 
       <NavMenu isExpanded={isNavExpanded} onClickProp={onClickHandler} />

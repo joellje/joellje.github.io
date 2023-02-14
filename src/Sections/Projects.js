@@ -28,7 +28,7 @@ export default function Projects() {
     <Fade triggerOnce={true}>
       <div className="text-white pt-16 pb-16" id="projects">
         <h1 className="title">Projects</h1>
-        <div className="pt-16 flex flex-col gap-5 font-['Fira_Sans']">
+        <div className="pt-6 sm:pt-16 flex flex-col gap-5 font-['Fira_Sans']">
           {projects.map((project) => (
             <ProjectCard
               name={project.name}

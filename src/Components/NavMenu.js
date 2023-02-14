@@ -1,12 +1,11 @@
 import React from "react";
 import NavbarMenuIcon from "./NavbarMenuIcon";
-import { FaLinkedinIn, FaGithubSquare } from "react-icons/fa";
-import { AiFillFileText } from "react-icons/ai";
+import { FaLinkedin, FaGithubSquare, FaFileAlt } from "react-icons/fa";
 
 export default function NavMenu(props) {
   return (
     <div
-      className={`fixed flex flex-col w-full h-72 pt-16 z-40 bg-grayy ${
+      className={`fixed flex flex-col min-w-full h-72 pt-16 z-40 bg-grayy ${
         props.isExpanded ? "" : "hidden"
       }`}
     >
@@ -20,7 +19,7 @@ export default function NavMenu(props) {
           href="https://drive.google.com/file/d/13TVsQWqiWX6UGBsCckxgtVwbHFvmuAkC/view?usp=sharing"
           target="_blank"
         >
-          <AiFillFileText
+          <FaFileAlt
             className="hover:scale-125 transition-all duration-200 ease-linear cursor-pointer"
             onClick={props.onClickProp}
           />
@@ -32,7 +31,7 @@ export default function NavMenu(props) {
           />
         </a>
         <a href="https://www.linkedin.com/in/joel-lim-jie-en/" target="_blank">
-          <FaLinkedinIn
+          <FaLinkedin
             className="hover:scale-125 transition-all duration-200 ease-linear cursor-pointer"
             onClick={props.onClickProp}
           />

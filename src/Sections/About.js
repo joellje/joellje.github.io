@@ -101,8 +101,8 @@ export default function About() {
         <h1 className="subtitle">Tech Stack</h1>
       </Fade>
       <Fade triggerOnce={true}>
-        <div className="flex flex-row gap-14">
-          <div className="w-1/4">
+        <div className="flex flex-col gap-5 sm:flex-row sm:gap-14">
+          <div className="w-full sm:w-1/4">
             <p className="pt-5 text-lg sm:text-xl">Languages</p>
             <div className="pt-2 grid grid-cols-3 gap-y-3">
               <JavaOriginalIcon
@@ -142,7 +142,7 @@ export default function About() {
               <Tooltip anchorId="python" style={{ fontSize: "16x" }} />
             </div>
           </div>
-          <div className="w-1/4">
+          <div className="w-full sm:w-1/4">
             <p className="pt-5 text-lg sm:text-xl">Frameworks / Libraries</p>
             <div className="pt-2 grid grid-cols-3 gap-y-3">
               <ExpressOriginalWordmarkIcon
@@ -176,7 +176,7 @@ export default function About() {
               <Tooltip anchorId="tailwind" style={{ fontSize: "16x" }} />
             </div>
           </div>
-          <div className="w-1/4">
+          <div className="w-full sm:w-1/4">
             <p className="pt-5 text-lg sm:text-xl">Tools</p>
             <div className="pt-2 grid grid-cols-3 gap-y-3">
               <GithubOriginalIcon
@@ -232,37 +232,12 @@ export default function About() {
             </div>
           </div>
         </div>
-        {/* <div className="flex flex-col gap-5">
-          <div>
-            <p className="pt-5 text-xl sm:text-2xl">Languages</p>
-            <div className="pt-2 flex flex-row flex-wrap items-center gap-y-2">
-              <JavaOriginalIcon size={64} />
-              <Html5OriginalIcon size={64} className="ml-2" />
-              <Css3OriginalIcon size={64} className="ml-2" />
-              <JavascriptOriginalIcon size={64} className="sm:ml-2" />
-              <PythonOriginalIcon size={64} className="ml-2" />
-            </div>
-          </div>
-          
-          <div>
-            <p className="pt-5 text-xl sm:text-2xl">Tools</p>
-            <div className="pt-2 flex flex-row flex-wrap gap-y-2 items-center">
-              <GithubOriginalIcon size={64} color="#c9510c" />
-              <MongodbOriginalIcon size={64} className="ml-2" />
-              <FirebasePlainIcon size={64} className="ml-2" />
-              <FigmaOriginalIcon size={64} className="sm:ml-2" />
-              <SiPostman size={64} className="ml-2" />
-              <AmazonwebservicesPlainWordmarkIcon size={64} className="ml-3" />
-              <PostgresqlOriginalIcon size={64} className="sm:ml-2" />
-            </div>
-          </div>
-        </div> */}
       </Fade>
 
       <Fade triggerOnce={true}>
         <h1 className="subtitle">Experience</h1>
         <Fade triggerOnce={true}>
-          <div className="pt-12 flex flex-col gap-5">
+          <div className="pt-6 sm:pt-12 flex flex-col gap-5">
             {experiences.map((experience) => (
               <ExperienceCard
                 name={experience.name}
@@ -279,7 +254,7 @@ export default function About() {
       {/* TODO: Add responsiveness, improve cards, add favicon */}
       <Fade triggerOnce={true}>
         <h1 className="subtitle">Education</h1>
-        <div className="pt-12 flex flex-col gap-5">
+        <div className="pt-6 sm:pt-12 flex flex-col gap-5">
           {educations.map((education) => (
             <EducationCard
               name={education.name}

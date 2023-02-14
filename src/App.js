@@ -105,9 +105,9 @@ function App() {
         ></Particles>
       </div>
 
-      <div className="font-sans absolute w-screen text-white items-center flex flex-col">
+      <div className="font-sans absolute text-white items-center flex flex-col min-w-full">
         <Header />
-        <div className="h-screen flex-col w-9/12 sm:w-8/12 padding-auto text-white">
+        <div className="h-screen flex-col w-11/12 sm:w-8/12 padding-auto text-white">
           <SideBar />
           <Hero />
           <div className="bg-blackk px-10">

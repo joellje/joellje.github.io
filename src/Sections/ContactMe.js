@@ -14,11 +14,11 @@ export default function ContactMe() {
         </div>
 
         <div
-          className="flex flex-col justify-center gap-4 text-white sm:w-1/2 sm:gap-10"
+          className="mt-10 mb-20 flex flex-col justify-center gap-8 text-white sm:w-1/2 sm:gap-10"
           id="contactme"
         >
           <h1 className="text-4xl sm:text-5xl font-bold">Contact Me</h1>
-          <p className="text-lg: sm:text-xl font-['Fira_Sans']">
+          <p className="text-sm sm:text-xl font-['Fira_Sans']">
             Please feel free to reach out to me regarding opportunities or
             conversations in the software industry.
             <br />
