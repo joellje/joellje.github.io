@@ -21,9 +21,8 @@ import {
   NodejsOriginalIcon,
   TailwindcssPlainIcon,
   FigmaOriginalIcon,
-  AmazonwebservicesOriginalIcon,
   AmazonwebservicesPlainWordmarkIcon,
-  ExpressOriginalIcon,
+  SwiftOriginalIcon,
   ExpressOriginalWordmarkIcon,
 } from "react-devicons";
 import { Tooltip } from "react-tooltip";
@@ -68,14 +67,6 @@ export default function About() {
       image: aspire,
       technologies: "Technologies: Laravel, PostgreSQL, Git, Postman",
     },
-    // {
-    //   name: "Home Team Science and Technology Agency",
-    //   role: "Data Fusion and Analytics Intern",
-    //   description:
-    //     "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.",
-    //   date: "Dec '21 - Jan '22",
-    //   image: htx,
-    // },
   ];
   return (
     <div className="pt-16 text-white" id="about">
@@ -83,16 +74,20 @@ export default function About() {
         <div>
           <h1 className="title">About Me</h1>
           <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
-            As a Year 3 undergraduate in Nanyang Technological University's
-            Renaissance Engineering Programme, I am pursuing a Masters in
-            Technology Management and a Bachelors in Engineering Science
-            (Computer Science). I'm currently studying in UC Berkeley as an
-            exchange student for the year, and I'm looking for software
-            engineering internships!
+            Hello! I am Joel, a Third Year undergraduate at Nanyang
+            Technological University's Renaissance Engineering Programme. I
+            constantly seeking out new challenges and opportunities to learn and
+            grow, especially in the software engineering space.
           </p>
           <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
-            In my free time, I like to play football and boulder. I also love
-            watching anime.
+            When I'm not coding up a storm, you can often find me scaling
+            (indoor) rock walls with nothing but my bare hands (and maybe some
+            chalk) or running around a football field.
+          </p>
+          <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
+            So whether you're looking for a skilled developer to add to your
+            team or just someone to talk about the latest episode of Attack on
+            Titan with, I'm your person. Read on to find out more about me!
           </p>
         </div>
       </Fade>
@@ -135,11 +130,18 @@ export default function About() {
                 data-tooltip-place="bottom"
                 size={42}
               />
+              <SwiftOriginalIcon
+                id="swift"
+                data-tooltip-content="Swift"
+                data-tooltip-place="bottom"
+                size={42}
+              />
               <Tooltip anchorId="java" style={{ fontSize: "16x" }} />
               <Tooltip anchorId="html" style={{ fontSize: "16x" }} />
               <Tooltip anchorId="css" style={{ fontSize: "16x" }} />
               <Tooltip anchorId="js" style={{ fontSize: "16x" }} />
               <Tooltip anchorId="python" style={{ fontSize: "16x" }} />
+              <Tooltip anchorId="swift" style={{ fontSize: "16x" }} />
             </div>
           </div>
           <div className="w-full sm:w-1/4">

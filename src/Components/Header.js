@@ -12,18 +12,6 @@ export default function Header() {
     console.log(isNavExpanded);
   };
 
-  // const socials = [
-  //   {
-  //     name: "LinkedIn",
-  //     icon: FaLinkedin,
-  //     link: "https://www.linkedin.com/in/joel-lim-jie-en/",
-  //   },
-  //   {
-  //     name: "Github",
-  //     icon: FaGithub,
-  //     link: "https://github.com/joellje",
-  //   },
-  // ];
   return (
     <>
       <div className="flex flex-row space-between fixed z-50 top-0 min-w-full h-16 sm:justify-around items-center bg-blackk ">
