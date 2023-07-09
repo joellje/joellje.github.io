@@ -4,6 +4,7 @@ import ntu from "../Assets/ntu.png";
 import ucb from "../Assets/ucb.png";
 import shopee from "../Assets/shopee.png";
 import aspire from "../Assets/aspire.png";
+import liveramp from "../Assets/liveramp.png";
 import ExperienceCard from "../Components/ExperienceCard";
 import { SiPostman } from "react-icons/si";
 import { Fade } from "react-awesome-reveal";
@@ -44,11 +45,21 @@ export default function About() {
       date: "Aug '20 - Present",
       image: ntu,
       coursework:
-        "Software Engineering, Databases, Operating Systems, Algorithmic Design and Analysis, Object Oriented Design and Programming",
+        "Software Engineering, Advanced Databases, Operating Systems, Algorithmic Design and Analysis, Object Oriented Design and Programming, Advanced Computer Networks",
     },
   ];
 
   const experiences = [
+    {
+      name: "LiveRamp Holdings, Inc.",
+      role: "Software Engineering Intern",
+      description:
+        "Created and automated ETL pipelines for data delivery. Optimized query performance to reduce pipelines runtime by 5x. ",
+      date: "May '23 - Aug '23",
+      image: liveramp,
+      technologies:
+        "Technologies: Python, SQL, Apache Airflow, GCP Cloud Data Fusion",
+    },
     {
       name: "Shopee Pte Ltd",
       role: "Product Management Intern",
@@ -74,7 +85,7 @@ export default function About() {
         <div>
           <h1 className="title">About Me</h1>
           <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
-            Hello! I am Joel, a Third Year undergraduate at Nanyang
+            Hello! I am Joel, an incoming Fourth Year undergraduate at Nanyang
             Technological University's Renaissance Engineering Programme. I
             constantly seeking out new challenges and opportunities to learn and
             grow, especially in the software engineering space.
