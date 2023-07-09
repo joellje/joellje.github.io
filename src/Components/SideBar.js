@@ -31,7 +31,7 @@ export default function ExperienceCard() {
         }
       />
       <a
-        href="https://drive.google.com/file/d/13TVsQWqiWX6UGBsCckxgtVwbHFvmuAkC/view?usp=sharing"
+        href="https://drive.google.com/file/d/1WcRtD13QAJMPrFu36bmSnBBWmy2DMUDb/view?usp=sharing"
         target="_blank"
         id="resume"
         data-tooltip-content="My Resume"

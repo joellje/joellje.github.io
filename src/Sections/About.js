@@ -54,11 +54,11 @@ export default function About() {
       name: "LiveRamp Holdings, Inc.",
       role: "Software Engineering Intern",
       description:
-        "Created and automated ETL pipelines for data delivery. Optimized query performance to reduce pipelines runtime by 5x. ",
+        "Created and automated ETL pipelines for data delivery. Optimized query performance to reduce pipeline runtimes by 5x. ",
       date: "May '23 - Aug '23",
       image: liveramp,
       technologies:
-        "Technologies: Python, SQL, Apache Airflow, GCP Cloud Data Fusion",
+        "Technologies: Python, SQL, Apache Airflow, Cloud Data Fusion, BigQuery",
     },
     {
       name: "Shopee Pte Ltd",
