@@ -6,7 +6,7 @@ import shopee from "../Assets/shopee.png";
 import aspire from "../Assets/aspire.png";
 import liveramp from "../Assets/liveramp.png";
 import ExperienceCard from "../Components/ExperienceCard";
-import { SiPostman } from "react-icons/si";
+import { SiPostman, SiDocker } from "react-icons/si";
 import { Fade } from "react-awesome-reveal";
 import {
   JavaOriginalIcon,
@@ -235,6 +235,13 @@ export default function About() {
                 data-tooltip-place="bottom"
                 size={42}
               />
+              <SiDocker
+                id="docker"
+                data-tooltip-content="Docker"
+                data-tooltip-place="bottom"
+                size={42}
+                color="#0db7ed"
+              />
               <Tooltip anchorId="gh" style={{ fontSize: "16x" }} />
               <Tooltip anchorId="mongo" style={{ fontSize: "16x" }} />
               <Tooltip anchorId="firebase" style={{ fontSize: "16x" }} />
@@ -242,6 +249,7 @@ export default function About() {
               <Tooltip anchorId="postman" style={{ fontSize: "16x" }} />
               <Tooltip anchorId="aws" style={{ fontSize: "16x" }} />
               <Tooltip anchorId="postgresql" style={{ fontSize: "16x" }} />
+              <Tooltip anchorId="docker" style={{ fontSize: "16x" }} />
             </div>
           </div>
         </div>

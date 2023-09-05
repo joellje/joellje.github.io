@@ -7,8 +7,8 @@ export default function ProjectCard(props) {
   return (
     <>
       <Fade triggerOnce={true}>
-        <div className="hidden bg-gradient-to-br from-blackk via-grayy to-blackk bg-cover bg-center text-white w-full sm:flex flex-row justify-equal rounded-lg px-4 py-4 h-56 border-2 items-center">
-          <div className="flex justify-center items-center object-contain w-1/4 mr-4">
+        <div className="hidden font-['Fira_Sans'] bg-gradient-to-br from-blackk via-grayy to-blackk bg-cover bg-center text-white w-full flex-wrap sm:flex flex-row justify-equal rounded-lg px-4 py-4 border-2 items-center">
+          <div className="flex justify-center items-center object-contain mr-4 w-1/4">
             <img src={props.image} alt="logo" className="" />
           </div>
 
@@ -26,7 +26,7 @@ export default function ProjectCard(props) {
 
         <a href={url} target="_blank">
           <div className="flex h-70 font-['Fira_Sans'] sm:hidden bg-gradient-to-br from-blackk via-grayy to-blackk bg-cover bg-center text-white w-full flex-col justify-center rounded-lg px-2 py-4 border-2 items-center">
-            <div className="flex justify-center items-center object-contain w-5/6">
+            <div className="flex justify-center items-center object-contain w-32">
               <img src={props.image} alt="logo" className="" />
             </div>
 

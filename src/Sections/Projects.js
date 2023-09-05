@@ -29,6 +29,15 @@ export default function Projects() {
       technologies: "React.js/ SwiftUI, Express, Node.js, MongoDB",
     },
     // {
+    //   name: "Naturify (Final Year Project)",
+    //   description:
+    //     "Web app that allows users to make natural language queries to interact with Spotify",
+    //   url: "https://github.com/joellje/Naturify",
+    //   image: bulletinss,
+    //   technologies:
+    //     "React.js, Express, Node.js, Langchain, Stripe API (Work-in-Progress)",
+    // },
+    // {
     //   name: "BoulderBuddy",
     //   description:
     //     "Mobile app that serves as the perfect tool for avid climbers",

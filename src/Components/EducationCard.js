@@ -5,7 +5,7 @@ export default function EducationCard(props) {
   return (
     <>
       <Fade triggerOnce={true} cascade>
-        <div className="hidden font-['Fira_Sans'] bg-gradient-to-br from-blackk via-grayy to-blackk bg-cover bg-center text-white w-full h-56 sm:flex flex-row justify-equal rounded-lg px-4 py-4 border-2 items-center">
+        <div className="hidden font-['Fira_Sans'] bg-gradient-to-br from-blackk via-grayy to-blackk bg-cover bg-center text-white w-full flex-wrap sm:flex flex-row justify-equal rounded-lg px-4 py-4 border-2 items-center">
           <div className="flex justify-center items-center object-contain w-32 mr-4 w-1/4">
             <img src={props.image} alt="logo" className="w-1/2" />
           </div>
