@@ -16,7 +16,7 @@ export default function NavMenu(props) {
       </div>
       <div className="flex flex-row w-full justify-center items-center gap-10 mt-4 text-lg">
         <a
-          href="https://drive.google.com/file/d/13TVsQWqiWX6UGBsCckxgtVwbHFvmuAkC/view?usp=sharing"
+          href="https://drive.google.com/file/d/1WcRtD13QAJMPrFu36bmSnBBWmy2DMUDb/view?usp=sharing"
           target="_blank"
         >
           <FaFileAlt

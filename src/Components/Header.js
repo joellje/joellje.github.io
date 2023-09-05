@@ -27,7 +27,10 @@ export default function Header() {
         />
 
         <Navbar />
-        <FiMenu className="fixed right-5 z-50 sm:hidden" onClick={onClickHandler} />
+        <FiMenu
+          className="fixed right-5 z-50 sm:hidden"
+          onClick={onClickHandler}
+        />
       </div>
 
       <NavMenu isExpanded={isNavExpanded} onClickProp={onClickHandler} />
