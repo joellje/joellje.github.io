@@ -6,6 +6,7 @@ import shopee from '../Assets/shopee.png';
 import aspire from '../Assets/aspire.png';
 import liveramp from '../Assets/liveramp.png';
 import ms from '../Assets/ms.png';
+import stripe from '../Assets/stripe.png';
 import ExperienceCard from '../Components/ExperienceCard';
 import { SiPostman, SiDocker } from 'react-icons/si';
 import { Fade } from 'react-awesome-reveal';
@@ -41,13 +42,21 @@ export default function About() {
         {
             name: 'Nanyang Technological University',
             programme: 'Renaissance Engineering Programme',
-            date: "Aug '20 - Present",
+            date: "Aug '20 - Dec '24",
             image: ntu,
             coursework: 'Software Engineering, Advanced Databases, Operating Systems, Algorithmic Design and Analysis, Object Oriented Design and Programming, Advanced Computer Networks',
         },
     ];
 
     const experiences = [
+        {
+            name: 'Stripe, Inc.',
+            role: 'Software Engineer',
+            description: '🦙 Helping to grow the GDP of the internet! ',
+            date: "Feb '25 - Present",
+            image: stripe,
+            technologies: 'Technologies: Java',
+        },
         {
             name: 'Morgan Stanley',
             role: 'Summer Technology Analyst',
@@ -87,14 +96,13 @@ export default function About() {
                 <div>
                     <h1 className='title'>About Me</h1>
                     <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
-                        Hello! I am Joel, an incoming Fourth Year undergraduate at Nanyang Technological University's Renaissance Engineering Programme. I constantly seeking out new challenges and
-                        opportunities to learn and grow, especially in the software engineering space.
+                        Hello! I am Joel, a Software Engineer @ Stripe. I constantly seeking out new challenges and opportunities to learn and grow, especially in the software engineering space.
                     </p>
                     <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
                         When I'm not coding up a storm, you can often find me scaling (indoor) rock walls with nothing but my bare hands (and maybe some chalk) or running around a football field.
                     </p>
                     <p className="pt-5 text-sm sm:text-xl font-['Fira_Sans']">
-                        So whether you're looking for a skilled developer to add to your team or just someone to talk about the latest episode of Attack on Titan with, I'm your person. Read on to find
+                        So whether you're looking for a skilled developer to add to your team or just someone to talk about the latest episode of Jujutsu Kaisen with, I'm your person. Read on to find
                         out more about me!
                     </p>
                 </div>

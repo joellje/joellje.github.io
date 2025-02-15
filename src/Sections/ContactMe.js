@@ -1,5 +1,6 @@
 import React from 'react';
-import profile from '../Assets/profile2.JPG';
+// import profile from '../Assets/profile2.JPG';
+import profile from '../Assets/profile4.JPG';
 
 export default function ContactMe() {
     return (
